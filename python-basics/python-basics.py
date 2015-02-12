@@ -51,6 +51,19 @@ def hello(who):
 
 hello(name)
 
+def hello_with_default(who="John Doe"):
+    print("Hello {}!".format(who))
+
+hello_with_default("BME")
+hello_with_default()
+
+def multiple_return():
+    return "BME", "Egyetem"
+
+bme, category = multiple_return()
+print(bme)
+print(category)
+
 # Function's can be values
 def greet(hello):
     hello("Greetings")
@@ -131,6 +144,7 @@ del l[2]
 header("Tuples")
 t = ("Mate" * 2, 2)
 print(t)
+print(type(multiple_return()))
 
 # To access a tuple element, use indexing
 print t[0]
