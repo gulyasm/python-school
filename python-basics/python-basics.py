@@ -137,3 +137,19 @@ print t[0]
 
 # Tuple is immutable, delete doesn't work
 # del t[0]
+
+
+# =======================
+# Classes
+# ======================
+header("Classes")
+class Person():
+    def __init__(self, name="John Doe"):
+        self.name = name
+
+    def greet(self, who):
+        print("Hello {}, my name is {}!".format(who, self.name))
+
+me = Person("Mate")
+me.greet("You")
+
