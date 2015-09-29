@@ -96,4 +96,41 @@ class Person():
 me = Person("Mate")
 me.greet("You")
 
+# =======================
+# JSON
+# ======================
+header("JSON")
+# Python has builtin support for json
+import json
+# We can serialize objects to json string
+print(json.dumps({"name": "Mate", "age": 28}))
+# And deserialize them into dictionaries.
+person = json.loads('{"name": "Mate", "age": 28}')
+print(person["name"], person["age"])
 
+# =======================
+# Lambdas
+# ======================
+header("Lambdas")
+f = lambda x: len(x)
+print(f("Hello Mate!"))
+
+f = lambda x,y: "{} {}!".format(x,y)
+print(f("Hello", "Mate"))
+
+# Implement a map function
+# We receive a list and the transformation, 
+# return the new list
+# Inside the map function we will use the list 
+# comprehension python expression.
+def m(l, f):
+    return [f(x) for x in l]
+
+# We define the transformation
+f = lambda x: x*x
+print(m([2,3,4], f))
+
+f2 = lambda x: True if x%2==0 else False 
+print(m([2,3,4], f2))
+# Count the even numbers
+print(sum(m([2,34,5,634,5], f2)))
