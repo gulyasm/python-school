@@ -48,6 +48,12 @@ hello(name)
 # https://docs.python.org/3.4/library/functions.html
 # len is a builtin function to get length
 print(len("This is a long sentence!"))
+# input evaluates python expression in 2.7, not in 3+
+# As a result, with 2.7 you have to write "Mate" with 
+# 3, Mate is enough, without quote marks.
+s = input("Your name: ")
+hello(s)
+
 
 # Python has named parameters, parameters can be referenced by
 # name
