@@ -16,3 +16,5 @@ To evade version (dependency) hell use virtualenv, containers. It creates a new 
 ## Python version
 Use python3 until you are forced to use 2.7. Some library still does not support python 3.
 Main difference print function and UTF-8 support.
+Python version differences: https://wiki.python.org/moin/Python2orPython3
+More and more libraries are ported to Python 3. Python 2 is a legacy version.
