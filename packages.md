@@ -1,4 +1,0 @@
-# Packages
-## Packages
-## Pip
-## Virtualenv
